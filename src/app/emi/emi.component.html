@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="col-3"></div>
+        <div class="col-6 p-5 border border-2 shadow rounded">
+            <h3 class="text-center fw-bolder my-2">EMI CALCULATOR</h3>
+            <form action="" [formGroup]="emiForm" (ngSubmit)="calculateEmi()">
+                <div class="mb-4">
+                    <label for="">enter loan amount</label>
+                    <input type="text" placeholder="enter loan amount" class="form-control" formControlName="amount">
+                </div>
+                <div class="mb-4">
+                    <label for="">enter loan interest rate</label>
+                    <input type="text" placeholder="enter interest rate" class="form-control" formControlName="interest">
+                </div>
+                <div class="mb-4">
+                    <label for="">enter Tenure(year)</label>
+                    <input type="text" placeholder="enter loan tenure" class="form-control" formControlName="tenure">
+                </div>
+                <div class="mb-4 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">calculate</button>
+
+                </div>
+            </form>
+            <div class="d-flex justify-content-around">
+                <div class="">
+                    <h3 class="fw-bolder">MonthlyEmi</h3>
+                    <p class="text-center">{{emi}}</p>
+                </div>
+                <div class="">
+                    <h3 class="fw-bolder">TotalAmount</h3>
+                    <p class="text-center">{{totalPayableAmount}}</p>
+                </div>
+                <div class="">
+                    <h3 class="fw-bolder">Total Interest</h3>
+                    <p class="text-center">{{totalInterestPayable}}</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>  

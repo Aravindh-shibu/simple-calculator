@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="text-center fw-bolder">Addition</h1>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 border border-2 shadow p-4">
+            <div class="mb-3">
+                <label for="">Num1</label>
+                <input type="text" class="form-control" placeholder="enter number1" #box1>
+            </div>
+            <div class="mb-3">
+                <label for="">Num2</label>
+                <input type="text" class="form-control" placeholder="enter number2" #box2>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success" (click)="performAddition(box1,box2)">Add</button>
+            </div>
+            <h3>output:{{result}}</h3>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

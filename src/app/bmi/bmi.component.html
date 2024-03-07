@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 class="text-center fw-bolder">BMI</h1>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 border border-2 shadow p-4">
+            <div class="mb-3">
+                <label for="">enter weight in kg</label>
+                <input type="text" class="form-control" placeholder="enter number1" [(ngModel)]="weight" >
+            </div>
+            <div class="mb-3">
+                <label for="">enter height in cm</label>
+                <input type="text" class="form-control" placeholder="enter number2"[(ngModel)]="height" >
+            </div>
+            <div class="mb-3">
+                <button (click)="calculateBmi()" class="btn btn-success"> calculate </button>
+            <h3>output:{{bmi}}</h3>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
